@@ -1,100 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy – i-Calculate i-Plan My-Finance</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: #1a1a1a;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    h1 { font-size: 1.8em; margin-bottom: 0.2em; }
-    h2 { font-size: 1.2em; margin-top: 1.8em; }
-    .meta { color: #666; font-size: 0.9em; margin-bottom: 2em; }
-    a { color: #1a73e8; }
-    footer { margin-top: 3em; font-size: 0.85em; color: #666; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — i-Calculate i-Plan My-Finance</title>
+<style>
+  :root { --fg:#1c1c1e; --muted:#4a5568; --accent:#F37021; --line:#e2e8f0; --bg:#ffffff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:40px 22px 80px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:19px; margin:34px 0 8px; border-bottom:2px solid var(--line); padding-bottom:6px; }
+  h3 { font-size:16px; margin:20px 0 4px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .lead { background:#fff6f0; border:1px solid #ffd9c2; border-radius:12px; padding:16px 18px; margin:20px 0; }
+  ul { padding-left:22px; } li { margin:6px 0; }
+  code { background:#f2f4f7; padding:1px 6px; border-radius:5px; font-size:14px; }
+  a { color:var(--accent); }
+  .muted { color:var(--muted); }
+  table { border-collapse:collapse; width:100%; margin:10px 0; font-size:14.5px; }
+  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#faf7f5; }
+  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+</style>
 </head>
 <body>
+<div class="wrap">
+
   <h1>Privacy Policy</h1>
-  <p class="meta">App: i-Calculate i-Plan My-Finance &middot; Last updated: 3 June 2026</p>
+  <p class="sub"><strong>i-Calculate i-Plan My-Finance</strong> (package <code>com.akn.i_financecalculator</code>)<br>
+     Last updated: 20 July 2026</p>
 
-  <p>
-    This Privacy Policy describes how the i-Calculate i-Plan My-Finance application
-    ("the App") handles information. The App is a financial calculator that performs
-    its calculations entirely on your device. Your privacy is important, and this
-    policy explains, in plain terms, what data the App does and does not handle.
-  </p>
+  <div class="lead">
+    <strong>The short version:</strong> everything you calculate or save — loan amounts, investments,
+    saved scenarios, your optional profile, and your PIN — stays <strong>on your phone</strong> and is
+    never uploaded to us or anyone else. The only information sent to our servers is what's needed to
+    deliver notifications and in-app messages: a device identifier, a notification token, your device/OS
+    details, and the display name you choose. We never sell your data, we show no ads, and we use no
+    advertising or analytics trackers.
+  </div>
 
-  <h2>Information We Collect</h2>
-  <p>
-    The App does <strong>not</strong> collect, transmit, sell, or share any personal
-    information. We do not require you to create an account, and we do not gather
-    names, email addresses, contacts, location data, or financial account details.
-  </p>
-  <p>
-    Any values you enter into the App (such as amounts, interest rates, or time
-    periods used for calculations) are processed only on your device to produce a
-    result. They are not stored on any server and are not transmitted to us or to
-    any third party.
-  </p>
+  <h2>1. Who we are</h2>
+  <p>This app is published by <strong>Ishee Niraj</strong> ("we", "us"). If you have any question about this
+     policy or your data, contact us at <strong>admin.icalculate@gmail.com</strong>.</p>
 
-  <h2>PIN / Local Security</h2>
-  <p>
-    The App may use a PIN to lock access. This PIN is stored only on your device and
-    is never uploaded, transmitted, or accessible to the developer or any third party.
-  </p>
+  <h2>2. Information that stays only on your device</h2>
+  <p>The following is stored locally on your phone (in the app's private storage) and is <strong>never
+     transmitted off your device</strong> by us:</p>
+  <ul>
+    <li>Your name and 4-digit PIN used to unlock the app.</li>
+    <li>All values you type into calculators (loan amounts, incomes, rates, tenures, etc.).</li>
+    <li>Scenarios you save to <em>My Vault</em>, and the results shown in <em>My Money Picture</em>.</li>
+    <li>Any optional profile details you enter (age, annual income, metro/non-metro) used only to
+        pre-fill calculators.</li>
+    <li>Reminders you add to the Money Calendar and your Fun Zone game scores.</li>
+  </ul>
+  <p>Because this data lives only on your device, uninstalling the app permanently deletes it.</p>
 
-  <h2>How Information Is Used</h2>
-  <p>
-    Because the App does not collect personal data, there is no personal information
-    to use, process, or disclose. All inputs serve only to display calculation results
-    to you on your device.
-  </p>
+  <h2>3. Information sent to our servers</h2>
+  <p>To deliver push notifications and in-app messages, the app registers your device with our messaging
+     service (<code>api.inapptool.tech</code>) and sends:</p>
+  <table>
+    <tr><th>Data</th><th>Why</th></tr>
+    <tr><td>A device identifier and a Firebase Cloud Messaging (FCM) token</td><td>To send notifications and app messages to your device.</td></tr>
+    <tr><td>Device model, Android version, app version</td><td>To show messages that fit your device and app version.</td></tr>
+    <tr><td>The display name you set at setup</td><td>Used as an identifier so messages can be addressed to you.</td></tr>
+  </table>
+  <p>This information is used <strong>only</strong> to operate notifications and in-app messages. It is
+     <strong>not sold</strong>, <strong>not shared</strong> with third parties for their own use, and
+     <strong>not used for advertising</strong>. We do not receive or store any of the financial figures
+     you enter.</p>
 
-  <h2>Data Sharing and Third Parties</h2>
-  <p>
-    The App does not share any data with third parties. It does not include
-    advertising networks, analytics services, or tracking technologies.
-  </p>
+  <h2>4. Third-party services</h2>
+  <ul>
+    <li><strong>Google Firebase Cloud Messaging</strong> — delivers push notifications. Google processes the
+        FCM token per its <a href="https://firebase.google.com/support/privacy">privacy terms</a>.</li>
+    <li><strong>Frankfurter.app</strong> — used by the Currency Converter to fetch live exchange rates. Only
+        currency codes (e.g. "USD", "INR") are sent; <strong>no personal data</strong>.</li>
+    <li><strong>Our joke service</strong> — if you tap "Smarter (online)" in the Fun Zone, only the single
+        word you type is sent to our server to generate a joke. No personal or financial data is sent, and
+        the word is not stored.</li>
+  </ul>
 
-  <h2>Permissions</h2>
-  <p>
-    The App requests only the permissions necessary for its core calculator
-    functionality. It does not access your contacts, camera, microphone, location,
-    or storage for the purpose of collecting personal data.
-  </p>
+  <h2>5. What we do NOT do</h2>
+  <ul>
+    <li>No advertising, and no advertising or analytics tracking SDKs.</li>
+    <li>We do not sell or rent your data to anyone.</li>
+    <li>We do not access your contacts, photos, precise location, call logs, or SMS.</li>
+    <li>Your calculator inputs and saved scenarios are never transmitted to us.</li>
+  </ul>
 
-  <h2>Children's Privacy</h2>
-  <p>
-    The App does not knowingly collect any personal information from children. Since
-    no personal data is collected from any user, the App is suitable for general
-    audiences.
-  </p>
+  <h2>6. Permissions the app uses</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td>Internet</td><td>Live currency rates, notifications/messages, and the optional online joke.</td></tr>
+    <tr><td>Post notifications</td><td>To show you notifications (you can decline or turn this off in Settings).</td></tr>
+    <tr><td>Use biometric / fingerprint</td><td>Optional unlock instead of your PIN. Biometrics are handled by Android and never leave your device.</td></tr>
+  </table>
 
-  <h2>Changes to This Policy</h2>
-  <p>
-    This Privacy Policy may be updated from time to time. Any changes will be posted
-    on this page with a revised "Last updated" date. Continued use of the App after
-    changes are posted constitutes acceptance of the updated policy.
-  </p>
+  <h2>7. Data retention and deletion</h2>
+  <ul>
+    <li><strong>On your device:</strong> uninstalling the app deletes all locally stored data immediately.</li>
+    <li><strong>On our servers:</strong> device/notification records age out automatically. To have your
+        device record deleted sooner, email us at the address in section 1 and we will remove it.</li>
+  </ul>
 
-  <h2>Contact</h2>
-  <p>
-    If you have any questions about this Privacy Policy, you can contact:
-  </p>
-  <p>
-    <strong>Ishee Niraj</strong><br>
-    Email: <a href="mailto:admin.icalculate@gmail.com">admin.icalculate@gmail.com</a>
-  </p>
+  <h2>8. Children's privacy</h2>
+  <p>This app is intended for a general audience and is not directed at children under 13. We do not
+     knowingly collect personal information from children.</p>
+
+  <h2>9. Security</h2>
+  <p>Data on your device is stored in the app's private storage. Data sent to our servers travels over
+     encrypted HTTPS connections.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If we change this policy, we will update the "Last updated" date above and, where appropriate, notify
+     you in the app.</p>
+
+  <h2>11. Contact</h2>
+  <p>For any question, or to <strong>request deletion of the data we hold about you</strong> (see section 7), contact us at <strong>admin.icalculate@gmail.com</strong>. We will action deletion requests within 30 days.</p>
 
   <footer>
-    &copy; 2026 Ishee Niraj. All rights reserved.
+    © 2026 Ishee Niraj. All rights reserved. i-Calculate i-Plan My-Finance.
   </footer>
+</div>
 </body>
 </html>
+
