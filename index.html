@@ -30,15 +30,16 @@
 
   <h1>Privacy Policy</h1>
   <p class="sub"><strong>i-Calculate i-Plan My-Finance</strong> (package <code>com.akn.i_financecalculator</code>)<br>
-     Last updated: 20 July 2026</p>
+     Last updated: 17 August 2026</p>
 
   <div class="lead">
     <strong>The short version:</strong> everything you calculate or save — loan amounts, investments,
     saved scenarios, your optional profile, and your PIN — stays <strong>on your phone</strong> and is
-    never uploaded to us or anyone else. The only information sent to our servers is what's needed to
-    deliver notifications and in-app messages: a device identifier, a notification token, your device/OS
-    details, and the display name you choose. We never sell your data, we show no ads, and we use no
-    advertising or analytics trackers.
+    never uploaded to us or anyone else. What we do send to our servers is only what is needed to deliver
+    notifications and in-app messages: your <strong>mobile number</strong> (used once to create your secure
+    ID, then discarded — we never store it), that secure ID, a device identifier and notification token,
+    your device/OS details, and which app screens you open. We never sell your data, we show no ads, and
+    we use no advertising or analytics trackers.
   </div>
 
   <h2>1. Who we are</h2>
@@ -63,9 +64,19 @@
      service (<code>api.inapptool.tech</code>) and sends:</p>
   <table>
     <tr><th>Data</th><th>Why</th></tr>
+    <tr><td><strong>Your mobile number</strong></td><td>Sent once, only if you choose to enter it, so we can
+        create your secure ID. <strong>It is used in that moment and discarded — we never store it</strong>, and
+        it is never shared with anyone. You can skip this step.</td></tr>
+    <tr><td>Your secure ID</td><td>A 10-digit code created from your mobile number, which cannot be turned back
+        into that number. It is what lets your settings and notification history follow you if you reinstall the
+        app or move to a new phone.</td></tr>
     <tr><td>A device identifier and a Firebase Cloud Messaging (FCM) token</td><td>To send notifications and app messages to your device.</td></tr>
-    <tr><td>Device model, Android version, app version</td><td>To show messages that fit your device and app version.</td></tr>
-    <tr><td>The display name you set at setup</td><td>Used as an identifier so messages can be addressed to you.</td></tr>
+    <tr><td>Device model and brand, Android version, app version, language, whether notifications are switched
+        on, and how the app was installed</td><td>To show messages that fit your device and app version, and to
+        know whether we are able to reach you at all.</td></tr>
+    <tr><td>Basic app activity — which app screens you open, app launches and unlocks, and whether you opened a
+        notification</td><td>To decide which message to show on which screen, and to measure whether our messages
+        are useful. This never includes the figures you type into calculators.</td></tr>
   </table>
   <p>This information is used <strong>only</strong> to operate notifications and in-app messages. It is
      <strong>not sold</strong>, <strong>not shared</strong> with third parties for their own use, and
@@ -102,6 +113,8 @@
   <h2>7. Data retention and deletion</h2>
   <ul>
     <li><strong>On your device:</strong> uninstalling the app deletes all locally stored data immediately.</li>
+    <li><strong>Your mobile number:</strong> not retained at all. It is used to create your secure ID and
+        discarded within the same request — there is no copy of it on our servers to delete.</li>
     <li><strong>On our servers:</strong> device/notification records age out automatically. To have your
         device record deleted sooner, email us at the address in section 1 and we will remove it.</li>
   </ul>
